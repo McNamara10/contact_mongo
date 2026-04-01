@@ -1,16 +1,12 @@
 # MongoDB Contact Manager
 
-Progetto pratico sviluppato nell'ambito del **Master in Data Engineering** (ProfessionAI).
+![MongoDB](https://img.shields.io/badge/MongoDB-7.0-47A248?logo=mongodb&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-ready-2496ED?logo=docker&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter&logoColor=white)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/McNamara10/contact_mongo/blob/master/notebook/mongodb_analysis.ipynb)
 
 Dimostrazione delle principali operazioni MongoDB su una collezione di contatti: query avanzate, aggregation pipeline e operazioni CRUD.
-
----
-
-## Tecnologie
-
-- **MongoDB 7** (Docker)
-- **Python 3.11+** con `pymongo`
-- **Jupyter Notebook**
 
 ---
 
@@ -19,7 +15,7 @@ Dimostrazione delle principali operazioni MongoDB su una collezione di contatti:
 ### 1. Avvia MongoDB con Docker
 
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 
 ### 2. Installa le dipendenze Python
@@ -81,7 +77,7 @@ jupyter notebook notebook/mongodb_analysis.ipynb
   "Cognome": "string",
   "Numero_di_cellulare": "string | array",
   "Società": "string (opzionale)",
-  "Tag": ["string"] ,
+  "Tag": ["string"],
   "Altri_contatti": {
     "Email": "string | array",
     "Indirizzo": "string",
